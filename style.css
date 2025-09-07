@@ -1,0 +1,21 @@
+/* style.css */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Add a subtle transition to task cards */
+.task-card {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Custom style for completed task cards */
+.task-completed {
+    background-color: #f8f9fa; /* A light gray */
+    border-left: 5px solid #198754; /* Bootstrap's success green */
+}
+
+.task-completed .card-title, .task-completed .card-text {
+    text-decoration: line-through;
+    color: #6c757d; /* Bootstrap's muted text color */
+}
